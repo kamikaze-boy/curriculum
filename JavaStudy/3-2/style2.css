@@ -1,0 +1,124 @@
+body {
+    
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header {
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;
+    margin: 0 auto;
+}
+
+/* .main {
+    margin: 0 auto;
+} */
+
+.left {
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+
+}
+
+.right {
+    float: left;
+}
+
+.right-top {
+    width: 100px;
+    height: 150px;
+    background-color: #ff9e6b;
+    float: right;
+}
+
+.center {
+    
+}
+
+.top {
+    width: 150px;
+    height: 50px;
+    background-color: #dbd400;
+}
+
+.middle {
+    width: 150px;
+    height: 100px;
+    background-color: #0093b7;
+}
+
+.bottom {
+    width: 250px;
+    height: 100px;
+    background-color: #8c2727;
+}
+
+.footer {
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ウィンドウ幅が最大767pxまでの場合に適用(タブレット用)*/
+@media screen and (max-width: 767px) {
+
+    .wrapper, .header, .footer {
+        width: 300px;
+    }
+
+    .left {
+        width: 100px;
+    }
+
+    .right-top {
+        width: 75px;
+    }
+
+    .top {
+        width: 125px;
+
+    }
+
+    .middle {
+        width: 125px;
+    }
+
+    .bottom {
+        width: 200px;
+    }
+
+}
+
+
+/*ウィンドウ幅が最大479pxまでの場合に適用(スマホ用)*/
+@media screen and (max-width: 479px) {
+
+    .wrapper, .header, .left, .right-top, .top, .top, .middle, .bottom, .footer {
+        width: 150px;
+    }
+
+    .left, .right, .right-top {
+        float: none;
+    }
+
+
+
+}
