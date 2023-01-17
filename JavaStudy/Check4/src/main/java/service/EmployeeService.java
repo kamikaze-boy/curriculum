@@ -31,7 +31,7 @@ public class EmployeeService {
  
   // 問② 入力された値で、UPDATEする文
  /** ・SQL UPDATE文 */
- private static final String SQL_UPDATE = "UPDATE employee_table SET ? = to_char(current_timestamp, 'yyyy/MM/dd HH24:MI:SS') WHERE id = ?";
+ private static final String SQL_UPDATE = "UPDATE employee_table SET login_time = ? WHERE id = ?";
  
   // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文
  /** ・SQL SELECT文 */
