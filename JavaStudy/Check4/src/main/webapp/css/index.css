@@ -14,7 +14,8 @@
  /* 問② 文字の色を白にする */
  color: white;
  /* 問③ 背景に対して文字を縦方向に中央揃え */
- 
+  display:table-cell;
+  vertical-align:middle;
 }
  
 ul li {
@@ -49,5 +50,6 @@ ul li.pass {
  /* 問⑤ 文字の色を白にする */
  color:white;
  /* 問⑥ 背景に対して文字を縦方向に中央揃え */
- 
+ display:table-cell;
+ vertical-align:middle;
 }
